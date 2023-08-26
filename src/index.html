@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="relative h-screen w-full flex flex-col justify-between items-center"
+  >
+    <!-- Score Banner -->
+    <div
+      id="score"
+      class="flex justify-between border-2 border-gray-600 rounded p-3 w-full max-w-screen-md"
+    >
+      <!-- Words -->
+      <div class="text-white font-bold ps-3 text-xl my-auto">
+        <div class="leading-none">
+          ROCK <br />
+          PAPER <br />
+          SCISSORS
+        </div>
+      </div>
+      <!-- Score -->
+      <div class="bg-white rounded text-center py-1 px-5">
+        <div>SCORE</div>
+        <div class="font-bold text-4xl">12</div>
+      </div>
+    </div>
+    <!-- Move Select -->
+    <div id="move_select" class="relative w-full h-full">
+      <!-- <div
+        class="bg-white w-44 h-44 rounded-full flex justify-center items-center custom-border"
+      >
+        <img
+          class="bg-white rounded-full"
+          src="../images/icon-paper.svg"
+        />
+      </div> -->
+    </div>
+    <!-- Rules Button -->
+    <button
+      id="modal_open"
+      class="text-white border-2 rounded-lg px-10 py-1 mb-6 sm:ms-auto"
+    >
+      RULES
+    </button>
+    <!-- Modal Window -->
+    <div
+      id="modal"
+      class="fixed z-10 flex flex-col w-full h-full bg-white rounded-lg p-5 md:w-96 md:h-96 md:flex-row md:flex-wrap max-sm:justify-center max-sm:items-center invisible"
+    >
+      <div class="text-center text-3xl font-bold">RULES</div>
+      <img
+        class="max-sm:my-20 max-w-sm h-min m-5 md:order-last"
+        src="../images/image-rules.svg"
+      />
+      <button id="modal_close" class="cursor-pointer max-sm:mx-auto md:ms-auto">
+        <img src="../images/icon-close.svg" />
+      </button>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
